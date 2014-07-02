@@ -11,8 +11,7 @@
     <!-- Le styles -->
     <!-- Bootstrap -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="/css/jquery.fancybox.css" rel="stylesheet" type="text/css">
-    <link href="/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="/css/legit.css" rel="stylesheet" type="text/css">
 
     {{#page_html.css}}
     <link href="{{&.}}" rel="stylesheet">
@@ -30,37 +29,83 @@
 
   </head>
 
-  <body class="{{ page.title }} {{ page._info.title }} {{ page._info.classes }}">
+  <body class="{{ page.title }} {{ page._info.title }} {{ page._info.classes }}" style="padding-top:52px;">
 
     <!-- Nav!
     ================================================== -->
-    <header class="navbar" role="navigation">
-      <nav class="container">
-        <div class="border-bottom">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
-              <span class="sr-only">Toggle navigation</span>
-              <p>Menu</p>
-            </button>
-            <a class="logo brand" href="/"><img src="/media/rwdfbiglogo.jpg" alt="RW Deutsch Foundation Official Logo"></a> <!-- link to this image in the media folder? -->
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="mainmenu">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/whoweare/" target="">Who We Are</a></li>
-              <li><a href="/whatwedo/" target="">What We Do</a></li>
-              <li><a href="/tellusaboutyou/" target="">Tell Us About You</a></li>
-              <li class="blog"><a href="http://rwdfblog.com/" target="_blank">Read Our Blog &raquo;</a></li>
-              <!-- social media icons -->
-              <li class="social"><a href="https://www.facebook.com/RobertWDeutschFoundation" target="_blank"><img src="/media/socialmask_fbook.png" class="icongreen" ></a></li>
-              <li class="social last"><a href="https://twitter.com/DeutschFound" target="_blank"><img src="/media/socialmask_twitter.png" class="icongreen" ></a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div>
-      </nav><!-- /.container -->
-    </header>
+    <nav class="navbar navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+            <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">The Contemporary</a>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation">
+              <ul class="nav navbar-nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="speakerseries.html">Speaker Series</a></li>
+                <li><a href="donate.html">Support</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Scroll</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right location">
+                <li><p class="text">in Baltimore, MD</p></li>
+              </ul>
+            </nav>
+          </div><!-- END OFFSET -->
+        </div><!-- END ROW -->
+      </div><!-- END CONTAINER -->
+    </nav>
     <!-- /Nav!
     ================================================== -->
+
+    <!-- Crazy Pile of C's!
+    ================================================== -->
+
+    <!-- Fluctuating LOGO! -->
+    <header id="logo">
+      <div class="container">
+        <div class="row">
+          <h1 style="display:none;">The Contemporary, Baltimore, MD.</h1>
+          <div class="col-sm-2 col-md-2 col-lg-2">
+            <img src="img/logos/clogo-db-12.png" />
+            <img src="img/logos/clogo-db-11.png" />
+            <img src="img/logos/clogo-db-10.png" />
+            <img src="img/logos/clogo-db-9.png" />
+            <img src="img/logos/clogo-db-8.png" />
+            <img src="img/logos/clogo-db-7.png" />
+            <img src="img/logos/clogo-db-6.png" />
+            <img src="img/logos/clogo-db-5.png" />
+            <img src="img/logos/clogo-db-4.png" />
+            <img src="img/logos/clogo-db-3.png" />
+            <img src="img/logos/clogo-db-2.png" />
+            <img src="img/logos/clogo-db-1.png" />
+            <img src="img/logos/clogo-db-3.png" />
+            <img src="img/logos/clogo-db-5.png" />
+            <img src="img/logos/clogo-db-4.png" />
+            <img src="img/logos/clogo-db-6.png" />
+            <img src="img/logos/clogo-db-7.png" />
+            <img src="img/logos/clogo-db-1.png" />
+            <img src="img/logos/clogo-db-8.png" />
+            <img src="img/logos/clogo-db-9.png" />
+            <img src="img/logos/clogo-db-12.png" />
+            <img src="img/logos/clogo-db-10.png" />
+            <img src="img/logos/clogo-db-11.png" />
+            <img src="img/logos/clogo-db-2.png" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /Crazy Pile of C's!
+    ================================================== -->
+
 
     <!-- Main Content
     ================================================== -->
@@ -85,59 +130,125 @@
     </div><!-- END CONTAINER -->
 
 
-    <!-- Footer
-    ================================================== -->
-    <footer class="container">
-      <div class="diag-divider"></div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-3">
-          <img src="{{urls.theme}}/media/bigd.png" class="logo-sm" />
-          <address>
-            The Robert W. Deutsch Foundation <br/>
-            Suite 201, The Exchange <br/>
-            1122 Kenilworth Drive <br/>
-            Towson, MD 21204
-          </address>
-        </div>
-        <p class="col-xs-12 col-sm-3">
-          Email us at <a href="mailto:{{data.email}}" target="_blank">{{data.email}}</a> <br/>
-          Phone: {{data.phone}} <br/>
-          Fax: {{data.fax}} <br/>
-          <a href="https://twitter.com/DeutschFound" target="_blank"><img src="{{urls.theme}}/media/socialmask_twitter.png" class="icongray" ></a>
-          <a href="https://www.facebook.com/RobertWDeutschFoundation" target="_blank"><img src="{{urls.theme}}/media/socialmask_fbook.png" class="icongray" ></a>
-          <a href="http://rwdfblog.com/" target="_blank"><img src="{{urls.theme}}/media/socialmask_wpress.png" class="icongray" ></a>
-          <a href="https://www.flickr.com/photos/101614637@N07/" target="_blank"><img src="{{urls.theme}}/media/socialmask_flickr.png" class="icongray" ></a>
-        </p>
-        <ul class="menu col-xs-12 col-sm-2 col-sm-offset-1">
-          <li><a href="/">Home</a></li>
-          <li><a href="/whoweare/">Who We Are</a></li>
-          <li><a href="/whatwedo/">What We Do</a></li>
-          <li><a href="/tellusaboutyou/">Tell Us About You</a></li>
-          <li><a href="/news/">In The Press</a></li>
-          <li><a href="http://rwdfblog.com/">Read Our Blog &raquo;</a></li>
-          <li><a href="/whoweare/form990/fy2012-990.pdf">IRS Form 990 (FY2012)</a></li>
-        </ul>
-        <p class="col-xs-12 col-sm-3 text-right">&copy; Deutsch Foundation {{date.year}}</p>
-      </div>
-      <div class="row">
-        <p class="col-xs-12 col-sm-3">
-          Site by <a href="http://www.ookb.co/" target="_blank">OOKB</a> <br/>
-          Powered by <a href="http://www.cape.io/" target="_blank">CAPE</a> &amp; <a href="http://www.ezle.co/" target="_blank">EZLE</a>
-        </p>
-      </div>
-    </footer>
-    <!-- /footer -->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+    <!-- FOOTER! -->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
 
+    <footer>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-10 col-md-10 col-lg-10 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+
+            <div class="row">
+              <div class="col-sm-6 col-md-3">
+                <h3>The Contemporary <br/>(Museum) of Baltimore</h3>
+                <ul>
+                  <li>PO Box 1572</li>
+                  <li>Baltimore MD 21203</li>
+                  <li>&mdash;</li>
+                  <li>T: 410 756 0397</li>
+                  <li>info@contemporary.org</li>
+                </ul>
+              </div>
+              
+              <nav class="col-sm-6 col-md-3">
+                <h3><a href="about.html">About</a></h3>
+                <ul>
+                  <li><a href="about.html#mission">Mission &amp; History</a></li>
+                  <li><a href="about.html#staff">Staff &amp; Board</a></li>
+                  <li><a href="pdf/ContemporaryInternApp_2014-15.pdf">Internship</a></li>
+                  <li><a href="donate.html#supporters">Support</a></li>
+                  <li><a href="press.html">Press</a></li>
+                </ul>
+              </nav>
+
+              <!-- Add the extra clearfix for only the required viewport -->
+              <div class="clearfix visible-sm"></div>
+
+              <nav class="col-sm-6 col-md-3">
+                <h3>Programming</h3>
+                <ul>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="projects.html#council">Curatorial Council</a></li>
+                  <li><a href="speakerseries.html">Speaker Series</a></li>
+                </ul>
+              </nav>
+    
+              <nav class="col-sm-6 col-md-3">
+                <h3>Connect</h3>
+                <ul>
+                  <li><a href="http://eepurl.com/BDHxH">Email List</a></li>
+                  <li><a href="http://www.facebook.com/thecontemporarymuseum">Facebook</a></li>
+                  <li><a href="http://www.flickr.com/photos/cmbaltimore/">Flickr</a></li>
+                  <li><a href="http://instagram.com/thecontemporary">Instagram</a></li>
+                  <li><a href="http://thecontemporarymuseum.tumblr.com">Tumblr</a></li>
+                  <li><a href="https://twitter.com/ThContemporary">Twitter</a></li>
+                  <li><a href="https://vimeo.com/thecontemporarymuseum">Vimeo</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCz7EO0hiR08D87j1mssO8Sw">YouTube</a></li>
+                  <li>&mdash;</li>
+                  <li><a href="donate.html">Donate</a></li>
+                </ul>
+              </nav>
+    
+            </div>
+            
+            <hr class="border-top" />
+
+            <div class="row secondary">
+              <p class="col-sm-9">&copy; Copyright 1989&ndash;2014, The Contemporary</p>
+              <p class="col-sm-3 text-right"><a href="http://www.ookb.co/">site by OOKB</a></p>
+            </div>
+            <!-- END FOOTER CONTENTS -->
+            
+          </div><!-- END RIGHT OFFSET -->
+        
+        </div>  <!-- END ROW -->
+      </div>    <!-- END CONTAINER -->
+    </footer>   <!-- END FOOTER -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/tc.js"></script>
 
     {{#page_html.js}}
     <script src="{{&.}}" type="text/javascript"></script>
     {{/page_html.js}}
 
+    <!-- make all the under-slideshow-sections the same height with JS -->
+    <!-- move this into a homepage.js file or something -->
+    <!-- from here: http://stackoverflow.com/questions/6781031/use-jquery-css-to-find-the-tallest-of-all-elements -->
+    <script>
+      $(window).load(function() {
+      
+        var hg = -1;
+      
+        $('.homepage-graphic').each(function() {
+          hg = hg > $(this).height() ? hg : $(this).height();
+        });
+      
+        $('.homepage-graphic').each(function() {
+          $(this).height(hg);
+        });
+      
+        var ll = -1;
+        $('.link-lists').each(function() {
+          ll = ll > $(this).height() ? ll : $(this).height();
+        });
+        $('.link-lists').each(function() {
+          $(this).height(ll);
+        });
 
-<!--     <script src="/scripts/rwdf.js" type="text/javascript"></script> everything has been pulled out into its own, page specific JS files -->
-
+      });
+    </script>
 
     <!-- Google Analytics -->
     <script>
@@ -145,11 +256,10 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-47579279-1', 'rwdfoundation.org');
+      ga('create', 'UA-46130583-1', 'contemporary.org');
       ga('send', 'pageview');
-
     </script>
+    
     <!-- okay, so this is the main template -->
 
     <!-- built by OOKB and powered by CAPE and EZLE (http://www.ookb.co & http://www.cape.io) -->
